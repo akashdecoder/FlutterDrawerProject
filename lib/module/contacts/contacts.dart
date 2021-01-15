@@ -10,8 +10,46 @@ class ContactsPage extends StatelessWidget {
         title: Text('Contacts'),
       ),
       drawer: AppDrawer(),
-      body: Center(
-          child: Text('Contacts')
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: ListView(children: <Widget>[
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(Icons.contact_mail),
+                  title: Text('Akash Ranjan Das'),
+                  subtitle: Text('akash.ranjan1999@gmail.com'),
+                ),
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(Icons.contact_mail),
+                  title: Text('Aman Jaiswal'),
+                  subtitle: Text('jaiswalaman@gmail.com'),
+                ),
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(Icons.contact_mail),
+                  title: Text('Debjit Bhadra'),
+                  subtitle: Text('debo@gmail.com'),
+                ),
+              ],
+            ),
+          ),
+        ],),
       ),
     );
   }
