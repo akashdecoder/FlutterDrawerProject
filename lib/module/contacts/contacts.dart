@@ -51,6 +51,11 @@ class ContactsPage extends StatelessWidget {
           ),
         ],),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
+        child: Icon(Icons.mail),
+        onPressed: () {},
+      ),
     );
   }
 }

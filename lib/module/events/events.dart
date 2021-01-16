@@ -13,6 +13,11 @@ class EventsPage extends StatelessWidget {
       body: Center(
           child: Text('Events')
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
+        child: Icon(Icons.mail),
+        onPressed: () {},
+      ),
     );
   }
 }
