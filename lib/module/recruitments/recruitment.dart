@@ -1,3 +1,4 @@
+import 'package:Project1/services/mail_service.dart';
 import 'package:Project1/widget/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class RecruitmentPAge extends StatelessWidget {
   String _email;
 
   final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
+
 
   Widget _buildName() {
     return TextFormField(
@@ -115,6 +117,7 @@ class RecruitmentPAge extends StatelessWidget {
                 }
 
                 _formkey.currentState.save();
+                MailService.sendMail(_name, _email);
                 print(_name);
               },
             ),
